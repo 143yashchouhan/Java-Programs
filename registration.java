@@ -66,6 +66,6 @@ public class registration {
         email = sc.nextLine();
         System.out.print("Enter Password : ");
         pass = sc.nextLine();
-        // System.out.print("LOGIN SUCESSFULL");
+        System.out.print("LOGIN SUCESSFULL");
     }
 }
