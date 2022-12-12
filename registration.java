@@ -39,7 +39,7 @@ public class registration {
         do {
             System.out.print("Enter your Gender M/F : ");
             gender = sc.nextLine();
-        } while ((!gender.equals("m")) && (!gender.equals("M")) || (!gender.equals("f")) && (!gender.equals("F")));
+        } while ((!gender.equals("m")) && (!gender.equals("M")) && (!gender.equals("f")) && (!gender.equals("F")));
         System.out.print("Enter your Email : ");
         email = sc.nextLine();
         System.out.println("Enter Password : ");
