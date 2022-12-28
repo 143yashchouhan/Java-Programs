@@ -3,33 +3,40 @@ import java.util.*;
 public class a2pro {
     public static void main(String[] args) {
         // OBJECT OF CLASSES
-        product p1 = new product();
+        productc p2 = new productc();
         category c1 = new category();
-        disbill d1 = new disbill();
-
+        // disbill d1 = new disbill();
         Scanner sc = new Scanner(System.in);
         int ch;
-        System.out.println("1. Category");
-        System.out.println("2. Product");
-        System.out.println("3. Display Bill");
-        System.out.println("4. Display All");
-        System.out.print("Enter your choice : ");
-        ch = sc.nextInt();
-        switch (ch) {
-            // Category
-            case 1: {
+        do {
+            System.out.println("\n PRODUCT MANAGEMENT");
+            System.out.println("1. Category");
+            System.out.println("2. Product");
+            System.out.println("3. Display Bill");
+            System.out.println("4. Display All");
+            System.out.println("5. Exit");
+            System.out.print("Enter your choice : ");
+            ch = sc.nextInt();
+            switch (ch) {
+                // Category 
+                case 1: {
 
-                c1.category1();
+                    c1.category1();
+                    break;
+                }
+                // Product
+                case 2: {
+                    p2.product1();
+                    break;
+                }
+                case 3: {
+                    // d1.disbill1();
+                    p2.disbill1();
+                    break;
+                }
             }
-            // Product
-            case 2: {
-                p1.product1();
-                break;
-            }
-            case 3: {
-                d1.disbill1();
-            }
-        }
+        } while (ch != 5);
+
     }
 }
 
@@ -61,14 +68,12 @@ class category {
 
 }
 
-// PRODUCT
-class product {
-    static int pid;
+class productc {
+    int pid, cid, total;
+    String pname;
 
     void product1() {
         Scanner sc = new Scanner(System.in);
-        int cid, total;
-        String pname;
         System.out.print("Product ID : ");
         pid = Integer.parseInt(sc.nextLine());
         System.out.print("Product Name : ");
@@ -79,12 +84,15 @@ class product {
         total = sc.nextInt();
         System.out.println("DONE");
     }
+
+    void disbill1() {
+        System.out.println("\n Product ID : " + pid + "\t" + "Product Name : " + pname +"\t");
+    }
 }
 
-// DISPLAY BILL
-class disbill {
-    void disbill1() {
-        System.out.println("text");
+class disbill{
+    void disbill1(){
+        productc p = new productc();
     }
 }
 
