@@ -85,11 +85,11 @@ class productc {
     }
 
     void disbill1() {
-        System.out.println("____________________________________");
+        System.out.println("___________________________________");
         System.out.println("\n PRODUCT BILL");
         System.out.println("\nProduct ID : " + pid + "\n" + "Product Name : " + pname + "\n" + "Category ID : " + cid
                 + "\n" + "Total : " + total + "\n" + "GST : ");
-        System.out.println("____________________________________");
+        System.out.println("___________________________________");
     }
 }
 
