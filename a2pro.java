@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class a2pro {
     public static void main(String[] args) {
         // OBJECT OF CLASSES
@@ -18,7 +17,7 @@ public class a2pro {
             System.out.print("Enter your choice : ");
             ch = sc.nextInt();
             switch (ch) {
-                // Category 
+                // Category
                 case 1: {
 
                     c1.category1();
@@ -42,11 +41,11 @@ public class a2pro {
 
 // //CATEGORY INPUT
 class category {
-    void category1() {
-        Scanner sc = new Scanner(System.in);
         int ich, cid;
         String cname;
         float gstr;
+    void category1() {
+        Scanner sc = new Scanner(System.in);
         System.out.println("1. Add Category");
         System.out.println("2. Manage Category");
         System.out.print("Enter your Choice : ");
@@ -86,16 +85,20 @@ class productc {
     }
 
     void disbill1() {
-        System.out.println("\n Product ID : " + pid + "\t" + "Product Name : " + pname +"\t");
+        System.out.println("____________________________________");
+        System.out.println("\n PRODUCT BILL");
+        System.out.println("\nProduct ID : " + pid + "\n" + "Product Name : " + pname + "\n" + "Category ID : " + cid
+                + "\n" + "Total : " + total + "\n" + "GST : ");
+        System.out.println("____________________________________");
     }
 }
 
-class disbill{
-    void disbill1(){
-        productc p = new productc();
+class diss{
+    void diss1(){
+        // productc dp = new productc();
     }
+    
 }
-
 // String pname, cname;
 // int cid, pid, total, gtotal;
 // float gstr, cgst, sgst;
