@@ -1,4 +1,4 @@
-public class FindNoInArray {
+public class findnoinarray {
     public static void main(String[] args){
         int no[] = {1,10,15,20,34};
         int max = no[0];

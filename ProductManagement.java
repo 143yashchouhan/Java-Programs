@@ -1,5 +1,5 @@
 import java.util.*;
-public class ProductManagement {
+public class productmanagement {
     public static void main(String[] args) {
         // OBJECT OF CLASSES
         productc p2 = new productc();

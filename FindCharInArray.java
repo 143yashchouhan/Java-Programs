@@ -1,5 +1,5 @@
 import java.util.*;
-public class FindCharInArray {
+public class findcharinarray {
     public static void main(String[] args) {
         String sent = "java is programming language and I love java";
         char find = 'o';
