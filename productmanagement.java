@@ -49,10 +49,11 @@ class category {
         System.out.println("1. Add Category");
         System.out.println("2. Manage Category");
         System.out.print("Enter your Choice : ");
-        ich = Integer.parseInt(sc.nextLine());
+        ich = sc.nextInt();
         if (ich == 1) {
             System.out.print("Category ID :");
-            cid = Integer.parseInt(sc.nextLine());
+            cid = sc.nextInt();
+            sc.nextLine();
             System.out.print("Category Name : ");
             cname = sc.nextLine();
             System.out.print("GST Rate : ");
@@ -74,7 +75,8 @@ class productc {
     void product1() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Product ID : ");
-        pid = Integer.parseInt(sc.nextLine());
+        pid = sc.nextInt(cid);
+        sc.nextLine();
         System.out.print("Product Name : ");
         pname = sc.nextLine();
         System.out.print("Category ID : ");
